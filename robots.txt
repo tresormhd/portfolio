@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TODO-votre-domaine.tld/sitemap.xml
+Sitemap: https://tresormhd.github.io/portfolio/sitemap.xml

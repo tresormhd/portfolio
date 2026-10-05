@@ -1,6 +1,6 @@
 // Liens et réglages du site. Modifiez ici, puis `npm run build`.
 export const config = {
-  siteUrl: 'https://TODO-votre-domaine.tld', // TODO: URL finale du site (sitemap, Open Graph, canonical)
+  siteUrl: 'https://tresormhd.github.io/portfolio', // URL finale du site (sitemap, Open Graph, canonical), sans / final
   email: 'tresormhd@gmail.com',
   linkedin: 'https://www.linkedin.com/in/mohamed-tr%C3%A9sor-zan-bi',
   github: 'https://github.com/tresormhd',
