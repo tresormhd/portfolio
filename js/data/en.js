@@ -1,0 +1,137 @@
+export default {
+  meta: {
+    title: 'Mohamed Tresor ZAN-BI | Angular Developer, P&C Insurance',
+    description:
+      'Portfolio of Mohamed Tresor ZAN-BI, Angular developer in Abidjan. Business interfaces for property & casualty insurance, moving towards data science and IT project management.',
+    ogLocale: 'en_US',
+  },
+  skipLink: 'Skip to content',
+  brandLabel: 'MZ, Mohamed Tresor ZAN-BI, back to top',
+  langLabel: 'Language selection',
+  menuOpen: 'Open menu',
+  menuClose: 'Close menu',
+  navLabel: 'Main navigation',
+  nav: {
+    about: 'About',
+    skills: 'Skills',
+    experience: 'Experience',
+    education: 'Education',
+    projects: 'Projects',
+    contact: 'Contact',
+  },
+  hero: {
+    greeting: "Hi, I'm",
+    name: 'Mohamed Tresor ZAN-BI',
+    title: 'Angular Developer | Developer & Digital Operations Officer | P&C Insurance',
+    tagline: 'I build robust business interfaces for insurance and I am moving towards data.',
+    ctaContact: 'Contact me',
+    ctaCv: 'Download my CV',
+    location: 'Abidjan, Ivory Coast',
+    photoAlt: 'Portrait of Mohamed Tresor ZAN-BI',
+  },
+  about: {
+    title: 'About',
+    paragraphs: [
+      'Angular developer based in Abidjan, I have worked at GNA Assurances CI since September 2024, where I develop modules and maintain a business ERP covering HR, P&C/CIMA, marketing and operations.',
+      'My background goes from front-end development to API integration, with several full stack experiences.',
+      'I am training in data science (Python, Machine Learning) and aiming at IT project management, without losing my developer identity.',
+    ],
+    facts: [
+      { label: 'Location', value: 'Abidjan, Ivory Coast' },
+      { label: 'Current role', value: 'GNA Assurances CI, since September 2024' },
+      { label: 'Heading to', value: 'Data science and IT project management' },
+    ],
+  },
+  skills: {
+    title: 'Skills',
+    groups: {
+      front: 'Front-end',
+      back: 'Back-end / API',
+      mobile: 'Mobile',
+      data: 'Data',
+      tools: 'Tools',
+      domain: 'Domain',
+    },
+    labels: { iard: 'P&C insurance (IARD)', cima: 'CIMA regulation' },
+    training: 'in training',
+  },
+  experience: {
+    title: 'Experience',
+    current: 'Current',
+    items: {
+      gna: {
+        role: 'Developer & Digital Operations Officer',
+        company: 'GNA Assurances CI',
+        period: 'Sept. 2024 → present',
+        description:
+          'Development of Angular modules, bug fixing and maintenance of a business ERP (HR, P&C/CIMA, marketing, operations).',
+      },
+      sds: {
+        role: 'Front End Developer (fixed-term)',
+        company: 'Smart Data System',
+        period: '2023',
+        description: 'Integration and consumption of APIs with Angular.',
+      },
+      blooraid: {
+        role: 'Full Stack Developer (internship)',
+        company: 'Blooraid Consortium',
+        period: '2022 - 2023',
+        description: 'REST API development and Angular front-end integration.',
+      },
+      ace: {
+        role: 'Full Stack Developer (internship)',
+        company: 'ACE | Ahonzo Consulting Experts',
+        period: '2020 - 2021',
+        description: 'WordPress site redesign and custom API development.',
+      },
+    },
+  },
+  education: {
+    title: 'Education & certifications',
+    items: {
+      licence: {
+        title: 'Bachelor in Application and e-Services Development',
+        school: "Université Virtuelle de Côte d'Ivoire",
+        period: '2016 - 2019',
+      },
+      nan: {
+        title: 'Junior Developer Certification',
+        school: 'NaN Digital Academy',
+        period: '2018 - 2019',
+      },
+      data: {
+        title: 'Data Science training: Python, Machine Learning',
+        school: '',
+        period: '2023 - 2024',
+      },
+    },
+  },
+  projects: {
+    title: 'Projects',
+    filterLabel: 'Filter by category',
+    all: 'All',
+    categories: { web: 'Web', mobile: 'Mobile', data: 'Data' },
+    demo: 'Demo',
+    code: 'Code',
+    empty: 'No project in this category.',
+  },
+  contact: {
+    title: 'Contact',
+    intro: 'A question, an opportunity, a collaboration? Write to me.',
+    email: 'Email',
+    linkedin: 'LinkedIn',
+    github: 'GitHub',
+    location: 'Location',
+    locationValue: 'Abidjan, Ivory Coast',
+    form: {
+      name: 'Name',
+      email: 'Email address',
+      message: 'Message',
+      send: 'Send',
+      sending: 'Sending…',
+      success: 'Thank you, your message has been sent.',
+      error: 'Sending failed. Please email me directly.',
+    },
+  },
+  footer: { rights: 'All rights reserved.', top: 'Back to top' },
+};

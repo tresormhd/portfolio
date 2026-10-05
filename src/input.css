@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  body { @apply bg-white font-sans text-slate-700 antialiased; }
+  h1, h2, h3 { @apply text-slate-900; }
+  :focus-visible { outline: 3px solid #B45309; outline-offset: 2px; border-radius: 4px; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition duration-200; }
+  .btn-primary { @apply bg-accent text-slate-900 hover:bg-amber-400; }
+  .btn-secondary { @apply border border-slate-300 bg-white text-slate-900 hover:border-accent-dark hover:text-accent-dark; }
+  .chip { @apply inline-block rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-700; }
+  .card { @apply rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md; }
+  .field { @apply w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-500; }
+}
+
+/* Apparition au scroll : active uniquement si le JS tourne (classe .js posée dans <head>) */
+.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .reveal { opacity: 1; transform: none; }
+}

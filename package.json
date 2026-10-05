@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-tresor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio de Mohamed Tresor ZAN-BI (HTML, Tailwind CSS, JS)",
+  "scripts": {
+    "css": "tailwindcss -i ./src/input.css -o ./dist/style.css --minify",
+    "css:watch": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
+    "html": "node scripts/build.mjs",
+    "build": "npm run css && npm run html",
+    "start": "serve . -l 3000",
+    "package": "npm run build && node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.8.2",
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.17"
+  }
+}

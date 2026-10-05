@@ -1,0 +1,137 @@
+export default {
+  meta: {
+    title: 'Mohamed Tresor ZAN-BI | Développeur Angular, Assurance IARD',
+    description:
+      "Portfolio de Mohamed Tresor ZAN-BI, développeur Angular à Abidjan. Interfaces métier pour l'assurance IARD, en évolution vers la data science et la gestion de projet IT.",
+    ogLocale: 'fr_FR',
+  },
+  skipLink: 'Aller au contenu',
+  brandLabel: 'MZ, Mohamed Tresor ZAN-BI, retour en haut',
+  langLabel: 'Choix de la langue',
+  menuOpen: 'Ouvrir le menu',
+  menuClose: 'Fermer le menu',
+  navLabel: 'Navigation principale',
+  nav: {
+    about: 'À propos',
+    skills: 'Compétences',
+    experience: 'Expérience',
+    education: 'Formation',
+    projects: 'Projets',
+    contact: 'Contact',
+  },
+  hero: {
+    greeting: 'Bonjour, je suis',
+    name: 'Mohamed Tresor ZAN-BI',
+    title: "Angular Developer | Développeur & Chargé d'Exploitation Digitale | Assurance IARD",
+    tagline: "Je conçois des interfaces métier robustes pour l'assurance et j'évolue vers la data.",
+    ctaContact: 'Me contacter',
+    ctaCv: 'Télécharger mon CV',
+    location: "Abidjan, Côte d'Ivoire",
+    photoAlt: 'Portrait de Mohamed Tresor ZAN-BI',
+  },
+  about: {
+    title: 'À propos',
+    paragraphs: [
+      "Développeur Angular basé à Abidjan, je travaille depuis septembre 2024 chez GNA Assurances CI, où je développe des modules et assure la maintenance d'un ERP métier couvrant les RH, l'IARD/CIMA, le marketing et les opérations.",
+      "Mon parcours va du développement front-end à l'intégration d'API, avec plusieurs expériences full stack.",
+      'Je me forme à la data science (Python, Machine Learning) et je vise la gestion de projet IT, sans perdre mon identité de développeur.',
+    ],
+    facts: [
+      { label: 'Localisation', value: "Abidjan, Côte d'Ivoire" },
+      { label: 'Poste actuel', value: 'GNA Assurances CI, depuis septembre 2024' },
+      { label: 'Cap', value: 'Data science et gestion de projet IT' },
+    ],
+  },
+  skills: {
+    title: 'Compétences',
+    groups: {
+      front: 'Front-end',
+      back: 'Back-end / API',
+      mobile: 'Mobile',
+      data: 'Data',
+      tools: 'Outils',
+      domain: 'Métier',
+    },
+    labels: { iard: 'Assurance IARD', cima: 'Réglementation CIMA' },
+    training: 'en formation',
+  },
+  experience: {
+    title: 'Expérience',
+    current: 'En poste',
+    items: {
+      gna: {
+        role: "Développeur & Chargé d'Exploitation Digitale",
+        company: 'GNA Assurances CI',
+        period: "Sept. 2024 → aujourd'hui",
+        description:
+          "Développement de modules Angular, résolution de bugs et maintenance d'un ERP métier (RH, IARD/CIMA, marketing, opérations).",
+      },
+      sds: {
+        role: 'Développeur Front End (CDD)',
+        company: 'Smart Data System',
+        period: '2023',
+        description: "Intégration et consommation d'API sous Angular.",
+      },
+      blooraid: {
+        role: 'Développeur Full Stack (stage)',
+        company: 'Blooraid Consortium',
+        period: '2022 - 2023',
+        description: "Développement d'API REST et intégration du front Angular.",
+      },
+      ace: {
+        role: 'Développeur Full Stack (stage)',
+        company: 'ACE | Ahonzo Consulting Experts',
+        period: '2020 - 2021',
+        description: "Refonte d'un site WordPress et développement d'API sur mesure.",
+      },
+    },
+  },
+  education: {
+    title: 'Formation & certifications',
+    items: {
+      licence: {
+        title: "Licence Développement d'Applications et e-Services",
+        school: "Université Virtuelle de Côte d'Ivoire",
+        period: '2016 - 2019',
+      },
+      nan: {
+        title: 'Certification Développeur Junior',
+        school: 'NaN Digital Academy',
+        period: '2018 - 2019',
+      },
+      data: {
+        title: 'Formation Data Science : Python, Machine Learning',
+        school: '',
+        period: '2023 - 2024',
+      },
+    },
+  },
+  projects: {
+    title: 'Projets',
+    filterLabel: 'Filtrer par catégorie',
+    all: 'Tous',
+    categories: { web: 'Web', mobile: 'Mobile', data: 'Data' },
+    demo: 'Démo',
+    code: 'Code',
+    empty: 'Aucun projet dans cette catégorie.',
+  },
+  contact: {
+    title: 'Contact',
+    intro: 'Une question, une opportunité, une collaboration ? Écrivez-moi.',
+    email: 'E-mail',
+    linkedin: 'LinkedIn',
+    github: 'GitHub',
+    location: 'Localisation',
+    locationValue: "Abidjan, Côte d'Ivoire",
+    form: {
+      name: 'Nom',
+      email: 'Adresse e-mail',
+      message: 'Message',
+      send: 'Envoyer',
+      sending: 'Envoi en cours…',
+      success: 'Merci, votre message a bien été envoyé.',
+      error: "L'envoi a échoué. Écrivez-moi directement par e-mail.",
+    },
+  },
+  footer: { rights: 'Tous droits réservés.', top: 'Haut de page' },
+};
