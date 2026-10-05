@@ -3,6 +3,13 @@ import { renderApp, projectCards, projectFilters } from './core/render.js';
 import { initReveal } from './core/reveal.js';
 
 const app = document.getElementById('app');
+const root = document.documentElement;
+
+function syncThemeButton() {
+  const dark = root.classList.contains('dark');
+  app.querySelector('#theme-btn')?.setAttribute('aria-pressed', String(dark));
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#0F172A' : '#F7931E');
+}
 let lang = getInitialLang();
 
 function render() {
@@ -19,6 +26,7 @@ function render() {
   });
   window.scrollTo(0, y);
   initReveal(app);
+  syncThemeButton();
 }
 
 app.addEventListener('click', (e) => {
@@ -30,6 +38,16 @@ app.addEventListener('click', (e) => {
       render();
       app.querySelector(`[data-lang="${lang}"]`)?.focus();
     }
+    return;
+  }
+  if (e.target.closest('#theme-btn')) {
+    const dark = root.classList.toggle('dark');
+    try {
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    } catch {
+      /* stockage indisponible */
+    }
+    syncThemeButton();
     return;
   }
   const menuBtn = e.target.closest('#menu-btn');
@@ -64,7 +82,7 @@ app.addEventListener('submit', async (e) => {
     return;
   }
   status.textContent = form.dataset.sending;
-  status.className = 'text-sm font-semibold text-slate-700';
+  status.className = 'text-sm font-semibold text-slate-700 dark:text-slate-300';
   try {
     const res = await fetch(form.action, {
       method: 'POST',
@@ -76,13 +94,14 @@ app.addEventListener('submit', async (e) => {
     if (!res.ok || String(data.success) === 'false') throw new Error(data.message || String(res.status));
     form.reset();
     status.textContent = form.dataset.success;
-    status.className = 'text-sm font-semibold text-green-800';
+    status.className = 'text-sm font-semibold text-green-800 dark:text-green-400';
   } catch {
     status.textContent = form.dataset.error;
-    status.className = 'text-sm font-semibold text-red-800';
+    status.className = 'text-sm font-semibold text-red-800 dark:text-red-400';
   }
 });
 
 // Le HTML est pré-rendu en français au build : on ne re-rend que si la langue enregistrée diffère.
 if (document.documentElement.lang !== lang) render();
 else initReveal(app);
+syncThemeButton();

@@ -8,7 +8,8 @@
   <meta name="author" content="Mohamed Tresor ZAN-BI" />
   <meta name="theme-color" content="#F7931E" />
   <link rel="canonical" href="{{siteUrl}}/" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/images/tresor-dev-icone-clair.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/tresor-dev-icone-clair.png" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Mohamed Tresor ZAN-BI" />
@@ -27,7 +28,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" /></noscript>
   <link rel="stylesheet" href="dist/style.css" />
-  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var th = localStorage.getItem('theme');
+      if (th === 'dark' || (!th && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+    } catch (e) {}
+  </script>
   <script type="application/ld+json">{{jsonld}}</script>
 </head>
 <body>
