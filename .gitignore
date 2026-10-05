@@ -2,3 +2,4 @@ node_modules
 serve.log
 .lighthouse
 public
+CLAUDE.md

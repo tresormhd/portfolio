@@ -39,13 +39,13 @@
       <a href="#top" aria-label="MZ, Mohamed Tresor ZAN-BI, retour en haut" class="flex items-center gap-2 text-lg font-extrabold text-slate-900">
         <span class="grid h-9 w-9 place-items-center rounded-lg bg-accent text-sm text-slate-900" aria-hidden="true">MZ</span>
       </a>
-      <nav aria-label="Navigation principale" class="hidden items-center gap-1 md:flex"><a href="#about" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">À propos</a><a href="#skills" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Compétences</a><a href="#experience" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Expérience</a><a href="#education" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Formation</a><a href="#contact" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Contact</a></nav>
+      <nav aria-label="Navigation principale" class="hidden items-center gap-1 md:flex"><a href="#about" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">À propos</a><a href="#skills" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Compétences</a><a href="#experience" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Expérience</a><a href="#education" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Formation</a><a href="#projects" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Projets</a><a href="#contact" class="rounded px-3 py-2 text-sm font-medium text-slate-700 hover:text-accent-dark">Contact</a></nav>
       <div class="flex items-center gap-2">
         <div role="group" aria-label="Choix de la langue" class="flex items-center rounded-lg border border-slate-200 p-0.5"><button type="button" data-lang="fr" aria-pressed="true" lang="fr" class="rounded px-2.5 py-1 text-xs font-bold uppercase bg-slate-900 text-white">fr</button><button type="button" data-lang="en" aria-pressed="false" lang="en" class="rounded px-2.5 py-1 text-xs font-bold uppercase text-slate-700 hover:bg-slate-100">en</button></div>
         <button type="button" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu" data-open="Ouvrir le menu" data-close="Fermer le menu" class="rounded-lg p-2 text-slate-900 hover:bg-slate-100 md:hidden"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       </div>
     </div>
-    <nav id="mobile-menu" aria-label="Navigation principale" class="hidden border-t border-slate-200 bg-white px-4 pb-3 md:hidden"><a href="#about" class="block rounded px-3 py-3 text-base font-medium text-slate-800">À propos</a><a href="#skills" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Compétences</a><a href="#experience" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Expérience</a><a href="#education" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Formation</a><a href="#contact" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Contact</a></nav>
+    <nav id="mobile-menu" aria-label="Navigation principale" class="hidden border-t border-slate-200 bg-white px-4 pb-3 md:hidden"><a href="#about" class="block rounded px-3 py-3 text-base font-medium text-slate-800">À propos</a><a href="#skills" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Compétences</a><a href="#experience" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Expérience</a><a href="#education" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Formation</a><a href="#projects" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Projets</a><a href="#contact" class="block rounded px-3 py-3 text-base font-medium text-slate-800">Contact</a></nav>
   </header>
   <main id="main">
   <section id="top" aria-labelledby="hero-title" class="relative overflow-hidden bg-gradient-to-b from-accent-soft to-white">
@@ -134,6 +134,95 @@
         <h3 class="mt-1 text-lg font-bold">Licence Développement d'Applications et e-Services</h3><p class="mt-1 text-slate-700">Université Virtuelle de Côte d'Ivoire</p></div><div class="card reveal"><p class="text-sm font-semibold text-accent-dark">2018 - 2019</p>
         <h3 class="mt-1 text-lg font-bold">Certification Développeur Junior</h3><p class="mt-1 text-slate-700">NaN Digital Academy</p></div><div class="card reveal"><p class="text-sm font-semibold text-accent-dark">2023 - 2024</p>
         <h3 class="mt-1 text-lg font-bold">Formation Data Science : Python, Machine Learning</h3></div></div>
+    </div>
+  </section>
+  <section id="projects" aria-labelledby="projects-title" class="bg-white py-16 sm:py-20">
+    <div class="mx-auto w-full max-w-5xl px-4 sm:px-6">
+      <h2 id="projects-title" class="reveal mb-10 text-2xl font-extrabold tracking-tight sm:text-3xl">
+        <span class="mr-3 inline-block h-1 w-8 rounded bg-accent align-middle" aria-hidden="true"></span>Projets
+      </h2>
+      <div id="project-filters" role="group" aria-label="Filtrer par catégorie" class="mb-8 flex flex-wrap gap-2"><button type="button" data-filter="all" aria-pressed="true" class="rounded-full border px-4 py-1.5 text-sm font-semibold border-slate-900 bg-slate-900 text-white">Tous</button><button type="button" data-filter="web" aria-pressed="false" class="rounded-full border px-4 py-1.5 text-sm font-semibold border-slate-300 bg-white text-slate-800 hover:border-accent-dark">Web</button><button type="button" data-filter="mobile" aria-pressed="false" class="rounded-full border px-4 py-1.5 text-sm font-semibold border-slate-300 bg-white text-slate-800 hover:border-accent-dark">Mobile</button><button type="button" data-filter="data" aria-pressed="false" class="rounded-full border px-4 py-1.5 text-sm font-semibold border-slate-300 bg-white text-slate-800 hover:border-accent-dark">Data</button></div>
+     <div id="project-grid" aria-live="polite"><div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/dashboard-sinistres.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Web</p>
+          <h3 class="mt-1 text-lg font-bold">Tableau de bord sinistres IARD</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : interface Angular de suivi des dossiers sinistres (filtres, statuts, détail d'un dossier, formulaires de déclaration validés) sur données simulées.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Angular</li><li class="chip">TypeScript</li><li class="chip">RxJS</li><li class="chip">Tailwind CSS</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/analyse-sinistralite.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Data</p>
+          <h3 class="mt-1 text-lg font-bold">Analyse de la sinistralité auto</h3>
+          <p class="mt-2 flex-1">Projet d'apprentissage en data science : exploration d'un jeu de données simulé de sinistres auto, nettoyage, visualisations et premier modèle de prédiction de la charge sinistre.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Python</li><li class="chip">pandas</li><li class="chip">scikit-learn</li><li class="chip">Jupyter</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/app-declaration.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Mobile</p>
+          <h3 class="mt-1 text-lg font-bold">Application de déclaration de sinistre</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : application mobile (Ionic / Angular) pour déclarer un sinistre pas à pas, joindre des photos et suivre l'avancement du dossier.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Ionic</li><li class="chip">Angular</li><li class="chip">TypeScript</li><li class="chip">Capacitor</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/suivi-projet-it.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Web</p>
+          <h3 class="mt-1 text-lg font-bold">Outil de suivi de projet IT</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : tableau Kanban pour piloter un projet IT (backlog, sprints, jalons), travaillé en lien avec ma montée en compétences en gestion de projet.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Angular</li><li class="chip">TypeScript</li><li class="chip">Tailwind CSS</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/api-scoring.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Data</p>
+          <h3 class="mt-1 text-lg font-bold">Scoring de sinistres : API et interface Angular</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : un modèle de prédiction exposé par une API FastAPI et consommé par une interface Angular qui affiche le score et les facteurs qui l'expliquent.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">FastAPI</li><li class="chip">scikit-learn</li><li class="chip">Angular</li><li class="chip">TypeScript</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/detection-fraude.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Data</p>
+          <h3 class="mt-1 text-lg font-bold">Détection de fraude à l'assurance</h3>
+          <p class="mt-2 flex-1">Projet d'apprentissage : classification sur données simulées très déséquilibrées, avec rééquilibrage des classes et évaluation par précision, rappel et AUC-PR.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Python</li><li class="chip">scikit-learn</li><li class="chip">imbalanced-learn</li><li class="chip">Jupyter</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/pipeline-etl.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Data</p>
+          <h3 class="mt-1 text-lg font-bold">Pipeline ETL de données sinistres</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : extraction de fichiers CSV, nettoyage, contrôles de qualité et chargement dans une base SQL, exécutés par un script planifié.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Python</li><li class="chip">pandas</li><li class="chip">SQL</li><li class="chip">PostgreSQL</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/espace-client.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Web</p>
+          <h3 class="mt-1 text-lg font-bold">Espace client assurance</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : portail Angular où un assuré consulte ses contrats, ses attestations et ses échéances, avec authentification simulée et interface accessible.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Angular</li><li class="chip">TypeScript</li><li class="chip">Angular Material</li><li class="chip">RxJS</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/inspection-terrain.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Mobile</p>
+          <h3 class="mt-1 text-lg font-bold">Application d'inspection terrain</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : application mobile pour un expert qui renseigne une checklist, prend des photos et enregistre ses constats, y compris sans connexion.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Ionic</li><li class="chip">Angular</li><li class="chip">Capacitor</li><li class="chip">IndexedDB</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article><article class="card flex flex-col overflow-hidden !p-0">
+        <img src="assets/projects/rappels-echeances.svg" alt="" loading="lazy" decoding="async" width="640" height="360" class="aspect-video w-full object-cover" />
+        <div class="flex flex-1 flex-col p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent-dark">Mobile</p>
+          <h3 class="mt-1 text-lg font-bold">Rappels d'échéances de contrats</h3>
+          <p class="mt-2 flex-1">Projet personnel de démonstration : application mobile qui affiche un calendrier des échéances de contrats et envoie des notifications avant chaque renouvellement.</p>
+          <ul class="mt-4 flex flex-wrap gap-2"><li class="chip">Ionic</li><li class="chip">Angular</li><li class="chip">Capacitor</li><li class="chip">Notifications</li></ul>
+          <div class="mt-4 flex gap-4"></div>
+        </div></article></div></div>
     </div>
   </section>
   <section id="contact" aria-labelledby="contact-title" class="bg-white py-16 sm:py-20">
